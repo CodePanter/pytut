@@ -1,13 +1,31 @@
 import random
 
-print ('Welcome , what is your name ?)
+print ('Welcome , what is your name ?')
 my_name = input()
 
-print('Which number do you think it is?)
-guess_number = input()
 
-guess_number = int (input())
-if (guess_number % 2 ) == 0:
-    print('{0} is Even'.format(guess_number))
+print('Do you think it is an odd number or even number?')
+num = input()
+
+num= int (input('Enter your number'))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+##show that the guess is even or odd.
+if (num % 2) == 0:
+    print('{0} is even '.format(num))
 else:
-    print('{0} is Odd'.format(guess_number))
+    print('{0} is odd'.format(num))
+
