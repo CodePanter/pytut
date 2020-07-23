@@ -12,8 +12,20 @@ for e in b:
 
 c= list(range(1,69))         #create a range from 1 until 69 without 6
 print (c)
+###############
 
-total2= 0           #new variable
-for i in range(1,83):
-    print(i)
-    total2 += i # the new value of variable 2 should be the sum of the old value of total 2 + i4
+total2 = 0
+for i in range (1,5):
+    total2 += i
+    print(total2)
+
+    print(4 % 3)  # 4/3 and gives the remainder
+
+print(list(range(1,8)))             # check if the number is multiplied by 3
+total3 = 0
+for i in range(1,8):
+    if i  % 3 == 0 :            # If this is equal to zero than I is a multiply from 3
+        total3 += i
+        print(total3)
+ 
+
