@@ -1,9 +1,9 @@
 import random
 def random_walk(n):
-    # return coordinates after n b;pcl random walk
+    # return coordinates after n  random walk
 
-x=0
-y=0
+    x=0
+    y=0
 
 for i in range(n):
     step = random.choice(['N','S','E','W'])
@@ -19,5 +19,4 @@ for i in range(n):
 
 for i in range(25):  #amount of random walks
     walk = random_walk(10) # the length of walks
-    print(walk,"Distance from home = ",
-          abs(walk[0]) +abs(walk[1])
+    print(walk,"Distance from home = ", abs(walk[0]) +abs(walk[1])
