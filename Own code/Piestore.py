@@ -15,7 +15,7 @@ Pick a number and you get the special pie.''')
 
 number = random.randint(1,5)
 for Guesstaken in range (5):
-    print('Pick a number between 1 and 5 and you will be surprised')
+    print('Choose a number between 1 and 5 and you will be surprised')
     guess=input()
     guess=int(guess)
     if guess == 1:
@@ -25,12 +25,16 @@ for Guesstaken in range (5):
     if guess == 3:
         print('Congratulations you will get a Blueberry pie.')
     if guess == 4:
-        print('Congratulations you will get a Cinnamon cake.')
+        print('Congratulations you will get a Cinnamon blueberry pie.')
     if guess == 5:
-        print('Congratulations you will get a Cheesecake.')
+        print('Congratulations you will get a Apple pie.')
 
+#Make sure that after 1 guess the user get helped.
 
+print('Could you have a moment please? Than I will get your pie.')
+time.sleep(4)
 
+print('Thank you for visiting the Raspberry Pie store. Have a nice day!')
 
 
 
