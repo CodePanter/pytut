@@ -28,8 +28,8 @@ for Guesstaken in range (5):
         print('Congratulations you will get a Cinnamon blueberry pie.')
     if guess == 5:
         print('Congratulations you will get a Apple pie.')
-
-#Make sure that after 1 guess the user get helped.
+    else:
+        break
 
 print('Could you have a moment please? Than I will get your pie.')
 time.sleep(4)
@@ -49,37 +49,5 @@ print('Thank you for visiting the Raspberry Pie store. Have a nice day!')
 
 
 
-
-
-
-
-
-
-###############################
-#def choosePie():
- #   pie = ''
-  #  while pie != 'Chocolate' and pie != 'Raspberry':
-   #     print('Which pie do you want? (Chocolate or Raspberry)')
-#  pie = input()
-#
- #       return pie
-
-
-#def waiting():
-       # print('Currently we are busy, please have patience')
-       # time.waiting(5)
-      #  print()
-
-
-#print('Sorry for the waiting time, which type of pie do you want?')
-#pie= input()
-
-#Pie = ['Blueberry Pie', 'Chocolate cake', 'Raspberry pie','Apple pie']
-#print()
-#while pie != ((Blueberry Pie) && (Chocolate cake) && (Raspberry pie) && (apple pie):
-     #  print('Which cake do you want?')
-      #  pie = input()
-
-      # return pie
 
 
