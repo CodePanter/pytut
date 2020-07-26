@@ -34,6 +34,15 @@ for Guesstaken in range (5):
 print('Could you have a moment please? Than I will get your pie.')
 time.sleep(4)
 
+print('May I suggest one of our cookies?')
+
+cookies = ['Apple','Banana','Strawberry','Coconut']
+print(cookies)
+
+
+
+
+
 print('Thank you for visiting the Raspberry Pie store. Have a nice day!')
 
 
