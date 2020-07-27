@@ -32,14 +32,17 @@ for Guesstaken in range (5):
         break
 
 print('Could you have a moment please? Than I will get your pie.')
-time.sleep(4)
+time.sleep(2)
 
+
+#Trying to show the user a cookie list . The user can choose
+#a cookie
 print('May I suggest one of our cookies?')
-
+time.sleep(1)
+suggest=input()
 cookies = ['Apple','Banana','Strawberry','Coconut']
-print(cookies)
 
-
+if suggest == apple
 
 
 
