@@ -12,7 +12,7 @@ def random_walk_2(n):
 
     #What is the longest random walk you can take so that on average you  will end up 4 blocks or fewer from home?
 
-number_of_walks = 10000
+number_of_walks = 20000
 
 for walk_length in range (1,31):    #in range are the amount of blocks
     no_transport = 0 #number of walks 4 or fewer from home
