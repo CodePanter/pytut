@@ -30,3 +30,23 @@ while i < 5 and given_list[i] > 0:
     total4 += given_list[i]
     i+=1
 print(total4)
+
+#add all the positive numbers
+given_list2 = [5,2,4,6,1,2,-5,-3,-2]
+total5 = 0
+for element in given_list2:         #first add all the elements
+    if element <= 0:                #if element is less or equal to 0
+        break
+    total += element
+print(total5)
+
+
+
+total6 = 0
+i = 0
+while True:
+    total6 += given_list2[i]
+    i += 1
+    if given_list2[i] <= 0:
+        break
+print(total6)
