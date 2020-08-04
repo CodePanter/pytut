@@ -16,3 +16,4 @@ print(myName[7:])
 
 print('hello world!'.upper())
 print('hello world!'.lower())
+print('hello world!'.upper())
