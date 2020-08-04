@@ -54,3 +54,15 @@ def displayBoard(missedLetters, correctLetters, secretWord):    #missedletters= 
     for letter in missedLetters:            #the for loop on line 50 will iterate over each character in the string missedLetters and print on the screen.
         print(letter,end='')
     print()
+
+    blanks = '_' * len (secretWord)
+
+    for i in range(len(secretWord)):                    # for loop that goes through each letter in secretword and replaces the underscore with the actual letter is it exist in correctLetters.
+       if secretWord[i] in correctLetters:
+           blanks = blanks[:i] + secretWord[i] + blanks[i+1:]
+
+    for letters in blanks:
+        print(letter, end='')
+        print()
+
+def getGuess(alreadyGuessed):
