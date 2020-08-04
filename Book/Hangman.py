@@ -70,3 +70,11 @@ def getGuess(alreadyGuessed):
         print('Guess a letter.')
         guess = input()
         guess = guess.lower()                   #if the player enters an uppercase letter as a guess , the getguess function will return a lowercase letter.
+        if len(guess) != 1:                     #checks whether guess is not one character long.
+            print('Please enter a single letter')
+        elif guess in alreadyGuessed:                           
+            print('You have already guessed that letter. Choose again')
+        elif guess not in 'abcdefghijklmnopqrstuvwxyz':
+            print('Please enter a LETTER.')
+        else:
+            return guess
