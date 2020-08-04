@@ -66,3 +66,7 @@ def displayBoard(missedLetters, correctLetters, secretWord):    #missedletters= 
         print()
 
 def getGuess(alreadyGuessed):
+    while True:
+        print('Guess a letter.')
+        guess = input()
+        guess = guess.lower()                   #if the player enters an uppercase letter as a guess , the getguess function will return a lowercase letter.
