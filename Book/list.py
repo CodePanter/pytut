@@ -9,3 +9,10 @@ myName= 'Zophie the fat cat'
 print(myName[4:12])
 print(myName[:10])
 print(myName[7:])
+
+
+
+###string methods
+
+print('hello world!'.upper())
+print('hello world!'.lower())
