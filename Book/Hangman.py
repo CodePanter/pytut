@@ -78,4 +78,25 @@ def getGuess(alreadyGuessed):
             print('Please enter a LETTER.')
         else:
             return guess
-    ########### STOPPED AT ASKING THE PLAYER TO PLAY AGAIN
+        if len(guess) =! 1:                         # checks whether guess is not one character long
+            print('Please enter a single letter')
+        elif guess in alreadyGuessed:                #condition checks whether guess already exists inside the alreadyGuessed variable.
+            print('You have already guessed that letter. Choose again.')
+        elif guess not in 'abcdefghijklmnopqrstuvwxyz':     #checks whether guess is not a letter in the standard English alphabet, if any of these conditions are TRUE , the game prompts the player to enter a new guess
+            print('Please enter another LETTER.')
+        else return guess                               #if all these conditions are FALSE then the else statements' block executs and getGuess() returns the valuein guess in line 87.
+
+def playAgain():        #this function returns TRUE if the player wants to play again; otherwise it returns FALSE
+    print('Do you want to play again (yes or no)')
+    return input().lower().startswith('y')          #.lower returns the lowercase version of the attached string. There is a second method called starts('y) is TRUE.This function returns true if the associated stringbegins with the string parameter between the parentheses and FALSE if it doesn't. The 'yes'.startswith('y') is TRUE.
+
+print('H A N G M A N')          #call that executes when the game is running
+missedLetters = ''              #assigned blanks because the player hasn't guessed any missed or correct letters yet.
+correctLetters= ''
+secretWord= getRandomWord(words)    #will evaluate to a randomly selected word from the words list.
+gameIsDone = False                  #when code will set gameIsDone to true when it wants to signal that the game is player over and ask whether they want to play again
+
+while True:                           ##the remainder of the program consist of a while loop . The loop's condition is always tru which meansit will loop forever until it encounters a break statement.
+    displayBoard(missedLetters,correctLetters,secretWord)     #calls the displayBoard() function , passing it the three variables . Based on how many letters the player has correctly guessed and missed , this function displays the appropriate Hangman board to the player
+    guess = getGuess(missedLetters + correctLetters) #concantese the string in missedLetters and correctLetters variables and passes the result as the argument for the alreadyGuessed parameter
+    
