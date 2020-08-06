@@ -99,4 +99,14 @@ gameIsDone = False                  #when code will set gameIsDone to true when 
 while True:                           ##the remainder of the program consist of a while loop . The loop's condition is always tru which meansit will loop forever until it encounters a break statement.
     displayBoard(missedLetters,correctLetters,secretWord)     #calls the displayBoard() function , passing it the three variables . Based on how many letters the player has correctly guessed and missed , this function displays the appropriate Hangman board to the player
     guess = getGuess(missedLetters + correctLetters) #concantese the string in missedLetters and correctLetters variables and passes the result as the argument for the alreadyGuessed parameter
-    
+    if guess in secretWord:                 #if the guess string exists in secretWord, then this code concatenates guess to the end of the correctLetters string.
+        correctLetters = correctLetters + guess
+    foundAllLetters = True
+    for i in range(len(secretWord)):
+        if secretWord[i] not in correctLetters:
+            foundAllLetters = False
+            break
+    if foundAllLetters:
+        print('Yes! The secret word is '' + secretWord +''! You have won ')
+        gameIsDone=True
+
