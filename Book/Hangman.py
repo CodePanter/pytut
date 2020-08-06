@@ -109,4 +109,24 @@ while True:                           ##the remainder of the program consist of 
     if foundAllLetters:
         print('Yes! The secret word is '' + secretWord +''! You have won ')
         gameIsDone=True
+    else:
+        missedLetters = missedLetters + guess       #this block will execute if the condition was FALSE .
+
+    if len(missedLetters) == len(HANGMAN_PICS) -1:
+        displayBoard(missedLetters,correctLetters,secretWord)
+        print('You have run out of guesses \n After' +
+              str(len(missedLetters))+ 'missed guesses and' +
+              str(len(correctLetters)+ 'correct guesses',
+                  'the word was' + secretWord + ")
+              gameIsDone=True
+
+    if gameIsDone:                  #ask if the player want to play again(only if the game is done).
+        if playAgain():
+        missedLetters = ''
+        correctLetters = ''
+        gameIsDone= False
+        secretWord = getRandomWord(words)
+
+    else:
+        break
 
