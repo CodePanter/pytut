@@ -76,14 +76,6 @@ def getGuess(alreadyGuessed):
             print('You have already guessed that letter. Choose again')
         elif guess not in 'abcdefghijklmnopqrstuvwxyz':
             print('Please enter a LETTER.')
-        else:
-            return guess
-        if len(guess) =! 1:                         # checks whether guess is not one character long
-            print('Please enter a single letter')
-        elif guess in alreadyGuessed:                #condition checks whether guess already exists inside the alreadyGuessed variable.
-            print('You have already guessed that letter. Choose again.')
-        elif guess not in 'abcdefghijklmnopqrstuvwxyz':     #checks whether guess is not a letter in the standard English alphabet, if any of these conditions are TRUE , the game prompts the player to enter a new guess
-            print('Please enter another LETTER.')
         else return guess                               #if all these conditions are FALSE then the else statements' block executs and getGuess() returns the valuein guess in line 87.
 
 def playAgain():        #this function returns TRUE if the player wants to play again; otherwise it returns FALSE
