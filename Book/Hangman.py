@@ -47,23 +47,23 @@ def getRandomWord(wordlist):                                                    
     wordIndex = random.randint(0, len(wordlist) -1 )                             #Store a random index for this list in the wordIndex variable calling randint() with 2 arguments. First 0(for the first possible index) and the second is the value that the expression len(wordList)-1 evaluates to (for the last possible index in a wordlist.
     return wordlist[wordIndex]
 
-def displayBoard(missedLetters, correctLetters, secretWord):    #missedletters= a string of the letter that is not in a secret word. correctletters= a string of the letters the playet guessed that are in the secret word. secretword= a string of the secret word that the player is trying to guess.
-    print(HANGMAN_PICS)[len(missedLetters)])
-    print()
-    print('Missed letters:' , end='')
-    for letter in missedLetters:            #the for loop on line 50 will iterate over each character in the string missedLetters and print on the screen.
-        print(letter,end='')
+def displayBoard(missedLetters, correctLetters, secretWord):
+    print(HANGMAN_PICS[len(missedLetters)])
     print()
 
-    blanks = '_' * len (secretWord)
-
-    for i in range(len(secretWord)):                    # for loop that goes through each letter in secretword and replaces the underscore with the actual letter is it exist in correctLetters.
-       if secretWord[i] in correctLetters:
-           blanks = blanks[:i] + secretWord[i] + blanks[i+1:]
-
-    for letters in blanks:
+    print('Missed letters:',end= '')
+    for letter in missedLetters:
         print(letter, end='')
         print()
+
+        blanks = '_' * len(secretWord)
+
+        for i in range (len(secretWord)):
+            if secretWord [i] in correctLetters:
+                blanks = blanks[:i] + secretWord[i] + blanks [i+1:]
+        for letter in blanks:
+            print(letter, end= '')
+            print()
 
 def getGuess(alreadyGuessed):
     while True:
