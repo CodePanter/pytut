@@ -48,7 +48,7 @@ def getRandomWord(wordlist):                                                    
     return wordlist[wordIndex]
 
 def displayBoard(missedLetters, correctLetters, secretWord):    #missedletters= a string of the letter that is not in a secret word. correctletters= a string of the letters the playet guessed that are in the secret word. secretword= a string of the secret word that the player is trying to guess.
-    print(HANGMAN_PICS)[len(missedLetters)]
+    print(HANGMAN_PICS)[len(missedLetters)])
     print()
     print('Missed letters:' , end='')
     for letter in missedLetters:            #the for loop on line 50 will iterate over each character in the string missedLetters and print on the screen.
@@ -106,19 +106,19 @@ while True:                           ##the remainder of the program consist of 
         missedLetters = missedLetters + guess       #this block will execute if the condition was FALSE .
 
     if len(missedLetters) == len(HANGMAN_PICS) -1:
-        displayBoard(missedLetters,correctLetters,secretWord)
-        print('You have run out of guesses!\nAfter'+
-              str(len(missedLetters)+ 'missed guesses and'+
-              str(len(correctLetters)) + 'correct guesses,'
-              'the word was' + secretWord + "")
-        
+        displayBoard(missedLetters, correctLetters, secretWord)
+        print('You have run out of guesses!\nAfter' +
+              str(len(missedLetters))+'missed guesses and' +
+              str(len(correctLetters))+'correct guesses,the word was'
+              + secretWord + '"')
+        gameIsDone=True
 
     if gameIsDone:                  #ask if the player want to play again(only if the game is done).
         if playAgain():
-        missedLetters = ''
-        correctLetters = ''
-        gameIsDone= False
-        secretWord = getRandomWord(words)
+            missedLetters = ''
+            correctLetters = ''
+            gameIsDone= False
+            secretWord = getRandomWord(words)
 
     else:
         break
