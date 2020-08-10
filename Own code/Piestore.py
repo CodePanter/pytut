@@ -40,8 +40,18 @@ time.sleep(2)
 print('May I suggest one of our cookies?')
 time.sleep(1)
 suggest=input()
-cookies = ['Apple','Banana','Strawberry','Coconut']
-print(cookies)
+def menu():
+    print('Apple','Banana','Strawberry','Coconut')
+    choice = input()
+    if choice == 'Apple':
+        print('Apple')
+    if choice == 'Banana':
+        print('Banana')
+    if choice == 'Strawberry':
+        print('Strawberry')
+    if choice == 'Coconut':
+        print('Coconut')
+
 
 print('Thank you for visiting the Raspberry Pie store. Have a nice day!')
 
