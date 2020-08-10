@@ -41,10 +41,7 @@ print('May I suggest one of our cookies?')
 time.sleep(1)
 suggest=input()
 cookies = ['Apple','Banana','Strawberry','Coconut']
-
-if suggest == apple
-
-
+print(cookies)
 
 print('Thank you for visiting the Raspberry Pie store. Have a nice day!')
 
