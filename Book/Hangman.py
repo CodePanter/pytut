@@ -76,7 +76,8 @@ def getGuess(alreadyGuessed):
             print('You have already guessed that letter. Choose again')
         elif guess not in 'abcdefghijklmnopqrstuvwxyz':
             print('Please enter a LETTER.')
-        else return guess                               #if all these conditions are FALSE then the else statements' block executs and getGuess() returns the valuein guess in line 87.
+        else:
+            return guess                               #if all these conditions are FALSE then the else statements' block executs and getGuess() returns the valuein guess in line 87.
 
 def playAgain():        #this function returns TRUE if the player wants to play again; otherwise it returns FALSE
     print('Do you want to play again (yes or no)')
@@ -108,8 +109,8 @@ while True:                           ##the remainder of the program consist of 
         displayBoard(missedLetters,correctLetters,secretWord)
         print('You have run out of guesses \n After' +
               str(len(missedLetters))+ 'missed guesses and' +
-              str(len(correctLetters)+ 'correct guesses',
-                  'the word was' + secretWord + ")
+              str(len(correctLetters)) + 'correct guesses,'
+              the word was "' + secret word + '"')
               gameIsDone=True
 
     if gameIsDone:                  #ask if the player want to play again(only if the game is done).
