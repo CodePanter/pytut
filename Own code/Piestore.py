@@ -37,21 +37,22 @@ time.sleep(2)
 
 #Trying to show the user a cookie list . The user can choose
 #a cookie
-print('May I suggest one of our cookies?')
-time.sleep(1)
-suggest=input()
-def menu():
-    print('Apple','Banana','Strawberry','Coconut')
-    choice = input()
-    if choice == 'Apple':
-        print('Apple')
-    if choice == 'Banana':
-        print('Banana')
-    if choice == 'Strawberry':
-        print('Strawberry')
-    if choice == 'Coconut':
-        print('Coconut')
 
+print('Do you want to have a cookie?')
+answer = 'yes'
+while answer == 'yes':
+
+
+for Cookies in range(4)
+    cookies=input()
+    cookies=int(cookies)
+
+    if cookies == 1
+        print()
+
+
+
+p
 
 print('Thank you for visiting the Raspberry Pie store. Have a nice day!')
 
