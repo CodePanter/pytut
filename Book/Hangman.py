@@ -49,7 +49,7 @@ def displayBoard(missedLetters,correctLetters,secretWord):
     print(HANGMAN_PICS[len(missedLetters)])
     print()
 
-    print('Missed letters:',end= '')
+    print('Missed letters:',end=' ')
     for letter in missedLetters:
         print(letter, end='')
         print()
@@ -117,7 +117,6 @@ while True:                           ##the remainder of the program consist of 
             correctLetters = ''
             gameIsDone= False
             secretWord = getRandomWord(words)
-
     else:
         break
 
