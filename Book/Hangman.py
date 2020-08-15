@@ -63,7 +63,7 @@ def displayBoard(missedLetters,correctLetters,secretWord):
             print(letter, end= '')
             print()
 
-def getGuess(alreadyGuessed):
+def getGuess(alreadyGuessed): 1
     while True:
         print('Guess a letter.')
         guess = input()
